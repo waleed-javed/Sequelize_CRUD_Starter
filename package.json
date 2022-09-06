@@ -1,0 +1,36 @@
+{
+  "name": "sequelize_starter",
+  "version": "1.0.0",
+  "description": "Sequelize Starter CRUD App",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/waleed-javed/Sequelize_CRUD_Starter.git"
+  },
+  "keywords": [
+    "Sequelize",
+    "CRUD",
+    "Node",
+    "JS",
+    "EXPRESS",
+    "CORS",
+    "DB"
+  ],
+  "author": "Waleed Javed",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/waleed-javed/Sequelize_CRUD_Starter/issues"
+  },
+  "homepage": "https://github.com/waleed-javed/Sequelize_CRUD_Starter#readme",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.2",
+    "express": "^4.18.1",
+    "pg": "^8.8.0",
+    "pg-hstore": "^2.3.4",
+    "sequelize": "^6.21.4"
+  }
+}
