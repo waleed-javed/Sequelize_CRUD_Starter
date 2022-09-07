@@ -1,19 +1,22 @@
 const express = require('express');
 const cors = require('cors');
 
+//initial setup for server configurations
 const app = express();
-const DbOrigin= process.env.DB_ORIGIN || "localhost";
-const Port = process.env.PORT || 8000;
-const CorsPort = process.env.CORS_PORT || 8001;
+const DB_ORIGIN= process.env.DB_ORIGIN || "localhost";
+const PORT = process.env.PORT || 8000;
+const CORS_PORT = process.env.CORS_PORT || 8001;
 
 //middleWares
-const corOptions ={origin: `https://${DbOrigin}:${CorsPort}/`,};
+const corOptions ={origin: `https://${DB_ORIGIN}:${CORS_PORT}/`,};
 app.use(cors({corOptions}));
 app.use(express.json());
 app.use(express.urlencoded({extended: true}));
 
-//main
+//App Request Routes
+ app.get('/',(req, res)=>{
+    res.json("Testing Call Successfull!");
+ });
 
-app.listen(Port,()=>{
-    console.log(`Server Running on Port: ${Port}`);
-})
+//Listen
+app.listen(PORT,()=>{console.log(`Server Running on Port: ${Port}`);});
