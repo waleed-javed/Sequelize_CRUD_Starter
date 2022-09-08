@@ -1,7 +1,7 @@
-import dbConfig from "../configs/DbConfig";
+import dbConfig from "../configs/dbConfig";
 import { Sequelize, DataTypes } from "sequelize";
-import {ProductsModel} from '../models//EntityModels/ProductsModels';
-import {ReviewModel} from '../models//EntityModels/ProductsModels';
+import {ProductsModel} from './EntityModels/productsModels';
+import {ReviewModel} from './EntityModels/productsModels';
 
 //construct DB config instance
 const sequelize = new Sequelize(
