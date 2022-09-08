@@ -14,9 +14,9 @@ app.use(express.json());
 app.use(express.urlencoded({extended: true}));
 
 //App Request Routes
- app.get('/',(req, res)=>{
-    res.json("Testing Call Successfull!");
- });
+app.get('/',(req, res)=>{
+   res.json("Testing Call Successfull!");
+});
 
 //Listen
-app.listen(PORT,()=>{console.log(`Server Running on Port: ${Port}`);});
+app.listen(PORT,()=>{console.log(`Server Running on Port: ${PORT}`);});
